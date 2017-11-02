@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import TodoneTitle from './TodoneTitle'
-import TodoneList from './TodoneList'
+import TodoneTitle from '../components/TodoneTitle'
+import TodoneList from '../components/TodoneList'
 
 class Todone extends Component {
     render() {

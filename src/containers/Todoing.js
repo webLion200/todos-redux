@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {toggleTodo} from '../actions'
 //import TodoingTitle from './TodoingTitle'
-import TodoingList from './TodoingList'
+import TodoingList from '../components/TodoingList'
 
 const mapStateToProps = (state) => ({
     todos: state
