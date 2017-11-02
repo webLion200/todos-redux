@@ -1,16 +1,18 @@
-import React, {Component} from 'react'
-import TodoneTitle from '../components/TodoneTitle'
+import {connect} from 'react-redux'
+import {toggleTodo} from '../actions'
 import TodoneList from '../components/TodoneList'
 
-class Todone extends Component {
-    render() {
-        return (
-            <div className="todos">
-                <TodoneTitle />
-                <TodoneList />
-            </div>
-        )
-    }
-}
+const mapStateToProps = (state) => ({
+    todos: state
+});
+
+const mapPropsToState = {
+    onTodoClick: toggleTodo
+};
+
+const Todone = connect(
+    mapStateToProps,
+    mapPropsToState
+)(TodoneList);
 
 export default Todone

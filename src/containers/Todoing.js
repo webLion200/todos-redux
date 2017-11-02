@@ -1,4 +1,3 @@
-import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {toggleTodo} from '../actions'
 //import TodoingTitle from './TodoingTitle'
@@ -16,6 +15,7 @@ const Todoing = connect(
     mapStateToProps,
     mapPropsToState
 )(TodoingList);
+
 
 // class Todoing extends Component {
 //     render() {

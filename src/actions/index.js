@@ -9,3 +9,8 @@ export const toggleTodo = id => ({
     type: 'TOGGLE_TODO',
     id
 });
+
+export const delTodo = id => ({
+    type: 'DEL_TODO',
+    id
+});
